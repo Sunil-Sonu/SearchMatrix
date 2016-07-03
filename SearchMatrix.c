@@ -4,7 +4,7 @@
 
 int searchMatrix(int *arr, int r, int c, int key)
 {
-	int i = 0, j = c-1;
+	int i = 0, j = c-1;   // Searching the element from the top right of the array.
 	while (i < r && j>=0) 
 	{
 			if (*(arr + i*c + j) == key) return 1;
