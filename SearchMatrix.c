@@ -20,7 +20,7 @@ int main()
 	scanf_s("%d", &rows);
 	printf_s("Enter the Number of columns: ");
 	scanf_s("%d", &columns);
-	arr = (int **)malloc(sizeof(int *) * rows * columns);   // Single pointer allocation of the 2D-Array.
+	arr = (int *)malloc(sizeof(int *) * rows * columns);   // Single pointer allocation of the 2D-Array.
 	system("cls");  // Clear the console
 	printf_s("Enter the elements\n");					
 	for (int i = 0; i < rows; i++)
